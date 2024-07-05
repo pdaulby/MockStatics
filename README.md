@@ -9,4 +9,6 @@ Example Usage
             when(LocalDateTime.now()).thenReturn(LocalDateTime.parse("2015-08-04T10:11:30"));
 
             //test go here
+
+            StaticMockInterceptor.verifyStatic(LocalDateTime.class, ()->LocalDateTime.parse("2015-08-04T10:11:30"));
         }
