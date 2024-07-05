@@ -10,5 +10,5 @@ Example Usage
 
             //test go here
 
-            StaticMockInterceptor.verifyStatic(LocalDateTime.class, ()->LocalDateTime.now());
+            StaticMockInterceptor.verifyStatic(LocalDateTime.class, () -> LocalDateTime.now());
         }
