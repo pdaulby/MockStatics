@@ -4,6 +4,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
+ * Usage guide:
  * Annotate a test class with @ExtendWith({MockitoExtension.class, StaticMockInterceptor.class})
  * Annotate a @BeforeEach or @Test method with @MockStatics(ClassName.class)
  * To mock the static method, call when(ClassName.StaticMethod(...)).thenReturn(...)
