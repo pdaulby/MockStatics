@@ -10,5 +10,8 @@ Example Usage
 
             //test go here
 
-            StaticMockInterceptor.verifyStatic(LocalDateTime.class, () -> LocalDateTime.now(), times(1));
+            StaticMockInterceptor.verifyStatic(
+                LocalDateTime.class, 
+                () -> LocalDateTime.now(), 
+                times(1));
         }
